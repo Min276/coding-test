@@ -1,0 +1,137 @@
+.chat-bar {
+  background-color: #2e2f31;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 2.5rem;
+  align-items: center;
+}
+
+.user-name {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.type-icons {
+  font-size: 20px;
+}
+
+.chat-bar-column {
+  background-color: #2b2c2d;
+  width: 100%;
+  height: 100vh;
+}
+
+.chat-body {
+  background-color: #1b1c1d;
+  max-height: 68vh;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.left-chat,
+.right-chat {
+  display: flex;
+  gap: 1rem;
+  align-items: self-start;
+  padding: 2.5rem;
+}
+
+.right-chat {
+  flex-direction: row-reverse;
+  padding: 0 2.5rem;
+}
+
+.right-card {
+  display: flex;
+  justify-content: flex-end;
+}
+.divide-section {
+  height: 1px;
+  background: #333332;
+  justify-content: center;
+  display: flex;
+  padding: 0rem;
+  margin: 0 2rem;
+  position: relative;
+}
+.divider {
+  color: #b8b6a1;
+  position: absolute;
+  top: -0.7rem;
+  background: #1b1c1d;
+  width: 8rem;
+  display: flex;
+  justify-content: center;
+}
+
+.chat-title,
+.chat-title-reverse {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 0.3rem;
+  color: #bcbaa5;
+  align-items: center;
+}
+
+.chat-title > h4,
+.chat-title-reverse > h4 {
+  font-size: 16px;
+  color: white;
+}
+
+.chat > p,
+.chat-align-right > p {
+  opacity: 0.9;
+}
+
+.chat,
+.chat-align-right {
+  background-color: #2e2f31;
+  color: white;
+  border-radius: 1rem;
+  border-end-start-radius: 0;
+  padding: 1.5rem;
+  min-width: 380px;
+  max-width: 80%;
+}
+
+.chat-align-right {
+  text-align: right;
+  border-radius: 1rem;
+  border-end-end-radius: 0;
+}
+
+.chat-title-reverse {
+  flex-direction: row-reverse;
+}
+
+.ui.input > input {
+  background-color: #1b1c1d;
+  padding: 1rem 2rem;
+  /* padding-right: 2rem; */
+}
+
+.chat-area {
+  background-color: #2b2c2d;
+  border: 1px solid #1b1c1d;
+  padding: 0.3rem;
+}
+
+.chat-icon {
+  width: 20px;
+}
+
+.chat-icons {
+  width: 15px;
+  height: 18px;
+}
+
+.chat-box-detail {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem;
+  align-items: center;
+  padding: 1rem 2rem 0.5rem 2rem;
+  height: 100%;
+}

@@ -1,23 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import "semantic-ui-css/semantic.min.css";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
+import ChatDetailPage from "./pages/chats/[id]";
+import NotFound from "./pages/404";
+import Chat from "./pages/chats";
+import ChatUserProfile from "./components/ChatUserProfile";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Routes>
+          <Route exact path="/chats/:chatId" element={<ChatDetailPage />} />
+
+          <Route exact path="/chats" element={<Chat />} />
+          <Route
+            exact
+            path="/chats/:chatId/profile"
+            element={<ChatUserProfile />}
+          />
+
+          <Route path="/" element={<Navigate to="/chats" replace />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </Router>
     </div>
   );
 }

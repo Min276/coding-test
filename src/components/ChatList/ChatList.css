@@ -1,0 +1,84 @@
+.chat-list-column {
+  background: #2b2c2d;
+  width: 50%;
+  height: 100vh;
+}
+
+.chat-list {
+  display: flex;
+  padding: 1rem 1.5rem;
+  color: white;
+  border-bottom: 1.5px solid black;
+  gap: 1rem;
+  align-items: center;
+}
+
+.main-chat-list {
+  max-height: 75vh;
+  overflow: hidden;
+  overflow: auto;
+}
+
+.ui.secondary.button {
+  background-color: #2b2c2d;
+  color: #bdbdbd;
+}
+
+.time {
+  font-size: 12px;
+}
+
+.chat-list:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.title {
+  font-size: 17px;
+  font-weight: 600;
+  color: white;
+}
+
+.four-icons {
+  width: 15px;
+}
+
+.user-profile {
+  width: 60px;
+}
+
+.ui.icon.input > input {
+  background-color: #3c3f41;
+  padding: 1rem 0;
+  color: white;
+}
+
+.ui.icon.input > input::placeholder {
+  color: white;
+}
+
+.ui.input {
+  width: 100%;
+}
+
+.ui.icon.input > i.icon {
+  color: white;
+}
+
+.ui.search .prompt {
+  width: 100%;
+  border-radius: unset !important;
+}
+
+.ui.button {
+  background: #2b2c2d;
+  color: #bcbaa5;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.ui.button:hover {
+  opacity: 0.2;
+}
