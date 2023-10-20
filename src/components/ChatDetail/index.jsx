@@ -40,7 +40,7 @@ const ChatDetail = () => {
                   alt="chat-user"
                   onClick={clickEventHandler}
                 />
-                <div className={item.isRightAlign && `right-card`}>
+                <div className={item.isRightAlign ? `right-card` : ``}>
                   <div
                     className={item.isRightAlign ? `chat-align-right` : `chat`}
                   >

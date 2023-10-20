@@ -66,8 +66,12 @@ body {
     display: none !important;
   }
 
+  .navbar {
+    height: 56px!important;
+  }
+
   .chat-bar {
-    padding: 1rem !important;
+    padding: 0.5rem 1rem !important;
   }
 
   .chat,
@@ -92,6 +96,9 @@ body {
   .nav-items {
     display: none !important;
   }
+  .navbar {
+    height: 56px!important;
+  }
   .chat-list-column {
     width: 100% !important;
   }
@@ -102,12 +109,16 @@ body {
 
 @media (min-width: 501px) and (max-width: 1300px) {
   .chat-user-profile {
-    width: 350px !important;
+    max-width: 500px;
     margin: 0 auto;
   }
 
+  body {
+    background-color: #2b2c2d !important;
+  }
+
   .chat-bar {
-    padding: 1rem !important;
+    padding: 0.5rem 1rem !important;
   }
 
   .chat,
@@ -119,5 +130,52 @@ body {
   .left-chat,
   .right-chat {
     padding: 1rem !important;
+  }
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.column {
+  flex: 1;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .left,
+  .right {
+    flex: 1;
+  }
+  .center {
+    flex: 2;
+  }
+}
+
+@media (min-width: 1025px) {
+  .left,
+  .right {
+    flex: 1;
+  }
+  .center {
+    flex: 2;
+  }
+
+  .chat-user-profile {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  body {
+    background-color: #2b2c2d !important;
   }
 }

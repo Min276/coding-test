@@ -3,27 +3,21 @@ import ChatDetail from "../../components/ChatDetail";
 import ChatList from "../../components/ChatList";
 import ChatUserProfile from "../../components/ChatUserProfile";
 import Navbar from "../../components/Navbar";
-import { isMobile, isTablet } from "react-device-detect";
 
 const Chat = () => {
   return (
     <Fragment>
       <Navbar />
-      <div className="flex w-full">
-        {isTablet ? (
-          <>
-            <ChatList />
-            <ChatDetail />
-          </>
-        ) : isMobile ? (
+      <div className="container">
+        <div className="column left">
           <ChatList />
-        ) : (
-          <>
-            <ChatList />
-            <ChatDetail />
-            <ChatUserProfile />
-          </>
-        )}
+        </div>
+        <div className="column center">
+          <ChatDetail />
+        </div>
+        <div className="column right">
+          <ChatUserProfile />
+        </div>
       </div>
     </Fragment>
   );

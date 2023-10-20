@@ -1,5 +1,5 @@
 .chat-user-profile {
-  width: 25%;
+  width: 100%;
   background-color: #2b2c2d;
   height: 100vh;
   padding: 2rem 2rem;
@@ -92,10 +92,10 @@
 }
 
 .icon-title {
-    margin-top:5px;
+  margin-top: 5px;
 }
 
 .profile-cards {
-    display: flex;
-    gap: 1rem;
+  display: flex;
+  gap: 1rem;
 }
