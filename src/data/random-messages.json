@@ -1,0 +1,156 @@
+[
+  {
+    "_id": "6533892effd23d6078059b82",
+    "index": 0,
+    "isOnline": false,
+    "senderName": "John Doe",
+    "senderImage": "/icons/chat-list/boy.png",
+    "senderId": 2330,
+    "message": "Ipsum est in officia nostrud est. Ad cillum sunt elit reprehenderit Lorem labore. Elit mollit nostrud ut elit.\r\n",
+    "time": "2021-03-31T06:31:11 -06:-30",
+    "recipientName": "Frank Cena"
+  },
+  {
+    "_id": "6533892e90f75669e217c304",
+    "index": 1,
+    "isOnline": true,
+    "senderName": "John Doe",
+    "senderImage": "/icons/chat-list/boy.png",
+    "senderId": 2330,
+    "message": "Minim ut adipisicing mollit sunt laboris veniam reprehenderit id in officia aliquip in. Do exercitation aute elit incididunt elit id officia eu do. Officia cupidatat laboris ex consequat esse exercitation consectetur pariatur dolore labore laborum ut irure. Ipsum excepteur aliqua eiusmod enim irure commodo do sunt deserunt proident exercitation adipisicing cillum. Voluptate exercitation esse et exercitation incididunt velit culpa exercitation pariatur officia laborum ea ullamco culpa. Do laborum ullamco cillum consectetur nostrud do mollit laborum. Non sint sunt enim occaecat sunt cillum dolor.\r\n",
+    "time": "2019-10-23T04:14:48 -06:-30",
+    "recipientName": "Frank Cena"
+  },
+  {
+    "_id": "6533892ef41f2e8cfa577924",
+    "index": 2,
+    "isOnline": false,
+    "senderName": "Frank Cena",
+    "senderId": 2345,
+    "senderImage": "/icons/chat-list/girl.png",
+    "message": "Cupidatat elit quis reprehenderit velit. Laborum veniam cupidatat minim ut ad minim mollit nulla fugiat Lorem. Ea id aliquip velit nisi consequat do cupidatat dolore deserunt fugiat eu aute. Qui veniam sint incididunt et eiusmod anim tempor ex magna mollit fugiat ex ipsum ex. Labore irure aute deserunt sit enim velit. Eu ad id voluptate reprehenderit. Culpa occaecat pariatur non sunt Lorem ad non.\r\n",
+    "time": "2017-08-14T07:09:16 -06:-30",
+    "recipientName": "John Doe"
+  },
+  {
+    "_id": "6533892e2dc0ec42bee3f669",
+    "index": 3,
+    "isOnline": false,
+    "senderName": "John Doe",
+    "senderId": 2330,
+    "senderImage": "/icons/chat-list/boy.png",
+    "message": "Elit aliqua excepteur elit magna id. Id aute incididunt consequat mollit eiusmod irure ad eu duis esse. Veniam pariatur proident irure consectetur et consequat laborum et. Occaecat magna eu non officia sunt non do amet sunt do enim esse culpa ex. Pariatur do deserunt adipisicing minim. Do ea ut sint pariatur ex magna.\r\n",
+    "time": "2014-12-09T02:43:17 -06:-30",
+    "recipientName": "Frank Cena"
+  },
+  {
+    "_id": "6533892ec63a56be8afe7692",
+    "index": 4,
+    "isOnline": false,
+    "senderName": "Frank Cena",
+    "senderId": 2345,
+    "senderImage": "/icons/chat-list/girl.png",
+    "message": "Qui ullamco et consequat consectetur culpa. Dolor magna ut duis magna occaecat laboris minim ullamco. Qui adipisicing nisi id voluptate ipsum ea pariatur. Amet esse elit culpa sunt veniam eu consectetur deserunt enim. Officia adipisicing dolore sint elit laboris adipisicing amet. Reprehenderit voluptate velit dolor adipisicing commodo dolore nisi nostrud do voluptate voluptate magna tempor aliquip.\r\n",
+    "time": "2021-05-04T07:31:13 -06:-30",
+    "recipientName": "John Doe"
+  },
+  {
+    "_id": "6533892e603eb2469158ef22",
+    "index": 5,
+    "isOnline": false,
+    "senderName": "John Doe",
+    "senderImage": "/icons/chat-list/boy.png",
+    "senderId": 2330,
+    "message": "Occaecat aute magna labore ut deserunt reprehenderit occaecat anim pariatur. Minim ut aliquip irure quis. Laboris magna amet ad eiusmod duis velit magna esse ex non officia Lorem ad ad. Aute ipsum commodo cillum ullamco veniam elit dolor in. Tempor nulla nostrud ullamco tempor reprehenderit do excepteur laborum quis eu anim. Incididunt consectetur esse voluptate consectetur sint ipsum eiusmod anim adipisicing minim eu do officia do.\r\n",
+    "time": "2014-08-20T07:24:13 -06:-30",
+    "recipientName": "Frank Cena"
+  },
+  {
+    "_id": "6533892ebef8fd056f2c9108",
+    "index": 6,
+    "isOnline": true,
+    "senderName": "John Doe",
+    "senderImage": "/icons/chat-list/boy.png",
+    "senderId": 2330,
+    "message": "Dolor elit ullamco ipsum sunt sint voluptate ex esse consectetur excepteur. Sunt adipisicing in dolor deserunt laboris ex et ut adipisicing ullamco Lorem. Est aliquip ipsum fugiat qui voluptate voluptate. Incididunt quis fugiat est dolore laborum. Commodo quis ipsum sunt incididunt occaecat qui ex in.\r\n",
+    "time": "2017-12-26T02:45:21 -06:-30",
+    "recipientName": "Frank Cena"
+  },
+  {
+    "_id": "6533892e8aa66b046a668501",
+    "index": 7,
+    "isOnline": false,
+    "senderName": "Frank Cena",
+    "senderImage": "/icons/chat-list/girl.png",
+    "senderId": 2345,
+    "message": "Nulla velit aliqua culpa anim sint laborum sint magna occaecat ea quis. Adipisicing ullamco exercitation exercitation eu reprehenderit incididunt laboris velit et ad elit ullamco minim. Excepteur ut sint elit do cillum nulla reprehenderit occaecat do aliqua laboris et ut. Commodo nostrud velit fugiat ad elit enim minim.\r\n",
+    "time": "2018-04-20T07:41:06 -06:-30",
+    "recipientName": "John Doe"  
+  },
+  {
+    "_id": "6533892eb981e1e80987ed91",
+    "index": 8,
+    "isOnline": true,
+    "senderName": "John Doe",
+    "senderImage": "/icons/chat-list/boy.png",
+    "senderId": 2330,
+    "message": "Aliqua velit esse aute officia ipsum commodo irure mollit mollit eiusmod eu aute laborum. Mollit cillum ut quis sint elit exercitation consequat adipisicing do esse proident. Mollit non aliquip ea veniam.\r\n",
+    "time": "2021-08-25T06:03:18 -06:-30",
+    "recipientName": "Frank Cena"
+  },
+  {
+    "_id": "6533892e000f638d56e00848",
+    "index": 9,
+    "isOnline": false,
+    "senderName": "John Doe",
+    "senderId": 2330,
+    "senderImage": "/icons/chat-list/boy.png",
+    "message": "Lorem et adipisicing anim do laborum eu commodo eiusmod cillum eiusmod excepteur aute. Sunt ullamco laboris nulla nostrud labore eu reprehenderit. Ea duis voluptate sunt duis incididunt magna velit quis eiusmod minim. Non duis duis et aute do deserunt ullamco aute in fugiat Lorem. Id officia veniam voluptate consectetur eiusmod nostrud proident non commodo laborum enim exercitation. Incididunt pariatur ipsum sit minim esse exercitation magna id elit dolore. Quis est nisi tempor dolor cupidatat aliquip id proident minim veniam.\r\n",
+    "time": "2014-07-27T04:18:14 -06:-30",
+    "recipientName": "Frank Cena"
+  },
+  {
+    "_id": "6533892e33bea635d4273a6f",
+    "index": 10,
+    "isOnline": false,
+    "senderName": "Frank Cena",
+    "senderId": 2345,
+    "senderImage": "/icons/chat-list/girl.png",
+    "message": "Mollit esse consequat mollit ex do occaecat dolore est veniam cupidatat nulla est voluptate. Et duis elit ex ea est. Excepteur minim pariatur officia ullamco ipsum quis tempor veniam incididunt id ad irure excepteur ut. Ut deserunt Lorem reprehenderit pariatur occaecat aliqua Lorem commodo.\r\n",
+    "time": "2016-09-18T03:14:46 -06:-30",
+    "recipientName": "John Doe"
+  },
+  {
+    "_id": "6533892e4d251142d10fe205",
+    "index": 11,
+    "isOnline": true,
+    "senderName": "John Doe",
+    "senderImage": "/icons/chat-list/boy.png",
+    "senderId": 2330,
+    "message": "Commodo labore amet minim ea tempor labore deserunt. Sit laborum amet enim aliqua magna occaecat dolore elit tempor laborum exercitation sunt. Voluptate elit proident enim ut enim adipisicing ad anim.\r\n",
+    "time": "2015-01-29T09:09:13 -06:-30",
+    "recipientName": "Frank Cena"
+  },
+  {
+    "_id": "6533892e6a7763670dee806c",
+    "index": 12,
+    "isOnline": false,
+    "senderName": "Frank Cena",
+    "senderImage": "/icons/chat-list/girl.png",
+    "senderId": 2345,
+    "message": "Ipsum culpa aliqua reprehenderit Lorem magna amet magna est. Laborum commodo nostrud cillum reprehenderit voluptate. Consectetur laboris aute tempor exercitation do dolor magna do amet pariatur. Tempor laborum commodo anim minim magna culpa ad officia amet. Nisi eiusmod ullamco laboris anim aliqua. Id ullamco quis consectetur incididunt.\r\n",
+    "time": "2018-01-18T11:19:49 -06:-30",
+    "recipientName": "John Doe"
+  },
+  {
+    "_id": "6533892ea1e1d0a7ad54a81c",
+    "index": 13,
+    "isOnline": false,
+    "senderName": "Frank Cena",
+    "senderImage": "/icons/chat-list/girl.png",
+    "senderId": 2345,
+    "message": "Id sunt incididunt aute dolor anim exercitation sunt sit excepteur. Sit nostrud mollit exercitation eu amet Lorem esse sit consectetur in nisi occaecat. Aute commodo magna incididunt ea anim ex excepteur nisi consequat. Nulla quis labore aliquip ea et culpa minim excepteur aliqua aute magna qui pariatur. Id proident aute culpa occaecat ullamco.\r\n",
+    "time": "2021-08-01T09:36:16 -06:-30",
+    "recipientName": "John Doe"
+  }
+]

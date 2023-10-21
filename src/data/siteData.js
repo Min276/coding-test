@@ -1,46 +1,7 @@
-export const mockChatMessages = [
-  {
-    day: undefined,
-    messages: [
-      {
-        sender: "John Doe",
-        senderImage: "/icons/chat-list/boy.png",
-        isRightAlign: false,
-        time: "3:20 am",
-        message:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde possimus laudantium accusantium? Quasi voluptates.",
-      },
-    ],
-  },
-  {
-    day: "May 2",
-    messages: [
-      {
-        sender: "John Doe",
-        senderImage: "/icons/chat-list/boy.png",
-        isRightAlign: false,
-        time: "3:20 am",
-        message:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde possimus laudantium accusantium? Quasi voluptates.",
-      },
-      {
-        sender: "Frank Cena",
-        senderImage: "/icons/chat-list/girl.png",
-        isRightAlign: true,
-        time: "3:20 am",
-        message:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde possimus laudantium accusantium? Quasi voluptates.",
-      },
-      {
-        sender: "John Doe",
-        senderImage: "/icons/chat-list/boy.png",
-        isRightAlign: false,
-        time: "3:20 am",
-        message: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      },
-    ],
-  },
-];
+export const AccountData = {
+     id: 2345,
+     name: "Frank Cena"
+}
 
 export const MockChatList = [
     {

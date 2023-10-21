@@ -1,14 +1,73 @@
 import { Input } from "semantic-ui-react";
 import { SlOptionsVertical } from "react-icons/sl";
 import "./ChatDetail.css";
-import { mockChatMessages } from "../../data/siteData";
+import messageData from "../../data/random-messages.json";
+import { AccountData as profile } from "../../data/siteData";
 import { useNavigate } from "react-router-dom";
+import { useEffect, useState, useRef } from "react";
+import moment from "moment-timezone";
 
 const ChatDetail = () => {
   const navigate = useNavigate();
   const clickEventHandler = () => {
     navigate("/chats/123/profile");
   };
+
+  const containerRef = useRef(null);
+
+  const scrollToBottom = () => {
+    if (containerRef.current) {
+      containerRef.current.scrollTop = containerRef.current.scrollHeight;
+    }
+  };
+
+  const [messages, setMessages] = useState([]);
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const userTimezone = moment.tz.guess();
+
+  const LocalDateTimeZone = (data) =>
+    moment.tz(data, "YYYY-MM-DDTHH:mm:ss ZZ", userTimezone);
+
+  const TimeFormatFun = (data) => {
+    const inputTime = data;
+    const parsedTime = LocalDateTimeZone(inputTime);
+    return parsedTime.format("h:mm A");
+  };
+
+  const DateFormatFun = (data) => {
+    const inputDate = data;
+    const parsedDate = LocalDateTimeZone(inputDate);
+    return parsedDate.format("YYYY MMMM D");
+  };
+
+  const sortedData = messageData.sort((a, b) => {
+    const parsedTimeA = DateFormatFun(a.time);
+    const parsedTimeB = DateFormatFun(b.time);
+
+    return moment(parsedTimeA, "YYYY MMMM D").isBefore(
+      moment(parsedTimeB, "YYYY MMMM D")
+    )
+      ? -1
+      : 1;
+  });
+
+  useEffect(() => {
+    scrollToBottom();
+
+    const addMessage = () => {
+      if (currentIndex < sortedData.length) {
+        setMessages([...messages, sortedData[currentIndex]]);
+        setCurrentIndex(currentIndex + 1);
+      }
+    };
+
+    const timeOutId = setTimeout(addMessage, 2000);
+    return () => {
+      clearTimeout(timeOutId);
+    };
+  }, [currentIndex, messages, sortedData]);
+
   return (
     <div className="chat-bar-column">
       <div className="chat-bar">
@@ -21,47 +80,49 @@ const ChatDetail = () => {
         </div>
         <SlOptionsVertical fontSize={20} color="#E7E7E7" cursor="pointer" />
       </div>
-      <div className="chat-body">
-        {mockChatMessages.map((ones) => (
-          <div key={ones.day}>
-            {ones.day && (
-              <div key={ones.day} className="divide-section">
-                <h4 className="divider">{ones.day}</h4>
-              </div>
-            )}
-            {ones.messages?.map((item, index) => (
-              <div
-                key={index}
-                className={item.isRightAlign ? `right-chat` : `left-chat`}
-              >
-                <img
-                  className="cursor-pointer"
-                  src={item.senderImage}
-                  alt="chat-user"
-                  onClick={clickEventHandler}
-                />
-                <div className={item.isRightAlign ? `right-card` : ``}>
-                  <div
-                    className={item.isRightAlign ? `chat-align-right` : `chat`}
+      <div className="chat-body" ref={containerRef}>
+        {messages.map((item, index) => (
+          <div key={item.recipientName + index}>
+            <div className="divide-section">
+              <h4 className="divider">{DateFormatFun(item.time)}</h4>
+            </div>
+            <div
+              className={
+                item.senderId === profile.id ? `right-chat` : `left-chat`
+              }
+            >
+              <img
+                className="cursor-pointer"
+                src={item.senderImage}
+                alt="chat-user"
+                onClick={clickEventHandler}
+              />
+              <div className={item.senderId === profile.id ? `right-card` : ``}>
+                <div
+                  className={
+                    item.senderId === profile.id ? `chat-align-right` : `chat`
+                  }
+                >
+                  <span
+                    className={
+                      item.senderId === profile.id
+                        ? `chat-title-reverse`
+                        : `chat-title`
+                    }
                   >
-                    <span
-                      className={
-                        item.isRightAlign ? `chat-title-reverse` : `chat-title`
-                      }
-                    >
-                      <h4
-                        onClick={clickEventHandler}
-                        className="cursor-pointer"
-                      >
-                        {item.sender}{" "}
-                      </h4>{" "}
-                      {item.time}{" "}
-                    </span>
-                    <p>{item.message}</p>
-                  </div>
+                    <h4 onClick={clickEventHandler} className="cursor-pointer">
+                      {item.senderName}{" "}
+                    </h4>{" "}
+                    {TimeFormatFun(item.time)}{" "}
+                  </span>
+                  <p
+                    className={item.senderId === profile.id ? `` : `text-left`}
+                  >
+                    {item.message}
+                  </p>
                 </div>
               </div>
-            ))}
+            </div>
           </div>
         ))}
       </div>
